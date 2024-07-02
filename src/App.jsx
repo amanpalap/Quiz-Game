@@ -201,8 +201,6 @@ function Quiz() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
-    // Check if all questions have been answered
     const allAnswered = Object.values(answers).every(answer => answer !== '');
     if (!allAnswered) {
       alert('Please answer all questions before submitting.');
@@ -215,7 +213,7 @@ function Quiz() {
         score++;
       }
     }
-    alert(`You scored ${score} out of 15`);
+    alert (`You scored ${score} out of 15`);
   };
 
   const nextQuestion = () => {
@@ -280,7 +278,7 @@ function Quiz() {
               type='submit'
               className='px-4 py-2 text-white bg-green-500 rounded hover:bg-green-700'
             >
-              Submit
+              Submit 
             </button>
           )}
         </div>
